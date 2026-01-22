@@ -16,7 +16,7 @@ export function ServicesGrid({ services, variant = 'compact' }: ServicesGridProp
     }`}>
       {services.map((service) => {
         // Récupérer l'icône dynamiquement
-        const IconComponent = (LucideIcons as Record<string, React.ComponentType<{ className?: string }>>)[service.icon] || LucideIcons.Wrench
+        const IconComponent = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[service.icon] || LucideIcons.Wrench
 
         return (
           <Card key={service.id} className="group cursor-pointer hover:border-primary/20">

@@ -5,7 +5,7 @@ import { TeamGrid } from '@/components/sections/TeamGrid'
 import { servicesData } from '@/data/services'
 import { teamData } from '@/data/team'
 import { siteConfig } from '@/data/siteConfig'
-import { Phone, Mail, MapPin, ExternalLink, ArrowDown, Wrench, Clock, Shield, ChevronRight } from 'lucide-react'
+import { Phone, Mail, MapPin, ExternalLink, ArrowDown, Wrench, Clock, Shield, ChevronRight, ThumbsUp } from 'lucide-react'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export default function HomePage() {
@@ -81,26 +81,24 @@ export default function HomePage() {
       {/* Marquee section */}
       <div className="bg-neutral-900 py-4 overflow-hidden border-y border-neutral-800">
         <div className="marquee">
-          <div className="marquee-content">
-            {[...Array(2)].map((_, i) => (
-              <div key={i} className="flex items-center gap-8 text-neutral-500 text-sm font-medium">
-                <span>ENTRETIEN</span>
-                <span className="text-primary">•</span>
-                <span>RÉPARATION</span>
-                <span className="text-primary">•</span>
-                <span>DIAGNOSTIC</span>
-                <span className="text-primary">•</span>
-                <span>PNEUS</span>
-                <span className="text-primary">•</span>
-                <span>CLIMATISATION</span>
-                <span className="text-primary">•</span>
-                <span>EXPERTISE</span>
-                <span className="text-primary">•</span>
-                <span>TOUTES MARQUES</span>
-                <span className="text-primary">•</span>
-              </div>
-            ))}
-          </div>
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="marquee-content">
+              <span>ENTRETIEN</span>
+              <span className="text-primary">•</span>
+              <span>RÉPARATION</span>
+              <span className="text-primary">•</span>
+              <span>DIAGNOSTIC</span>
+              <span className="text-primary">•</span>
+              <span>PNEUS</span>
+              <span className="text-primary">•</span>
+              <span>CLIMATISATION</span>
+              <span className="text-primary">•</span>
+              <span>EXPERTISE</span>
+              <span className="text-primary">•</span>
+              <span>TOUTES MARQUES</span>
+              <span className="text-primary">•</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -131,8 +129,8 @@ export default function HomePage() {
               </ScrollReveal>
 
               <ScrollReveal delay={200}>
-                <div className="inline-flex items-center gap-3 bg-primary/5 border border-primary/20 text-primary px-5 py-3 rounded-lg font-medium">
-                  <Shield className="w-5 h-5" />
+                <div className="inline-flex items-center gap-3 bg-positive/10 border border-positive/30 text-positive-dark px-5 py-3 rounded-lg font-medium">
+                  <ThumbsUp className="w-5 h-5" />
                   Devis gratuit avant intervention
                 </div>
               </ScrollReveal>

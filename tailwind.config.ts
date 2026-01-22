@@ -25,6 +25,11 @@ const config: Config = {
           light: '#fbbf24',
           dark: '#d97706',
         },
+        positive: {
+          DEFAULT: '#06b6d4',  // Cyan/Turquoise
+          light: '#22d3ee',
+          dark: '#0891b2',
+        },
         neutral: {
           50: '#fafafa',
           100: '#f5f5f5',

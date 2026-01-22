@@ -25,7 +25,7 @@ export const siteConfig = {
 
   // Liens externes
   links: {
-    autoscout: '', // Lien AutoScout24 à compléter
+    autoscout: 'https://www.autoscout24.ch/fr/s/seller-2304884',
     googleMaps: '', // Lien Google Maps à compléter
   },
 

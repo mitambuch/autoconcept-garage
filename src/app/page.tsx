@@ -1,11 +1,9 @@
-'use client'
-
 import { ServicesGrid } from '@/components/sections/ServicesGrid'
 import { TeamGrid } from '@/components/sections/TeamGrid'
 import { servicesData } from '@/data/services'
 import { teamData } from '@/data/team'
 import { siteConfig } from '@/data/siteConfig'
-import { Phone, Mail, MapPin, ExternalLink, ArrowDown, Wrench, Clock, Shield, ChevronRight, ThumbsUp } from 'lucide-react'
+import { Phone, Mail, MapPin, ExternalLink, ArrowDown, Wrench, Clock, ChevronRight, ThumbsUp } from 'lucide-react'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 
 export default function HomePage() {
@@ -19,12 +17,12 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900" />
 
         {/* Subtle grid pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
+        <div className="absolute inset-0 opacity-[0.03]" aria-hidden="true" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }} />
 
         {/* Accent glow */}
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]" aria-hidden="true" />
 
         {/* Content */}
         <div className="relative z-10 section-container text-center py-20">
@@ -37,8 +35,10 @@ export default function HomePage() {
           <ScrollReveal delay={100}>
             <img
               src="https://res.cloudinary.com/df5khdkxl/image/upload/v1769087897/AC_bbzf8u.svg"
-              alt="Autoconcept"
-              className="h-20 md:h-28 lg:h-36 mx-auto mb-6"
+              alt="Autoconcept — Garage automobile à Serrière, Neuchâtel"
+              width={432}
+              height={144}
+              className="h-20 md:h-28 lg:h-36 w-auto mx-auto mb-6"
             />
           </ScrollReveal>
 
@@ -257,7 +257,7 @@ export default function HomePage() {
       {/* CTA Banner */}
       <section className="py-24 md:py-32 bg-primary relative overflow-hidden">
         {/* Subtle pattern */}
-        <div className="absolute inset-0 opacity-10" style={{
+        <div className="absolute inset-0 opacity-10" aria-hidden="true" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3C/g%3E%3C/svg%3E")`,
         }} />
 

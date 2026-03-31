@@ -31,8 +31,10 @@ export function Header() {
           <Link href="/" className="flex items-center">
             <img
               src="https://res.cloudinary.com/df5khdkxl/image/upload/v1769087897/AC_bbzf8u.svg"
-              alt="Autoconcept"
-              className={`h-10 transition-all duration-300 ${
+              alt="Autoconcept — Garage automobile à Serrière, Neuchâtel"
+              width={120}
+              height={40}
+              className={`h-10 w-auto transition-all duration-300 ${
                 isScrolled ? '' : 'brightness-0 invert'
               }`}
             />
@@ -72,7 +74,8 @@ export function Header() {
               isScrolled ? 'text-neutral-900' : 'text-white'
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Menu"
+            aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? (
               <X className="w-6 h-6" />

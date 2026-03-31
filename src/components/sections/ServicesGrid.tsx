@@ -1,6 +1,29 @@
 import { Card } from '@/components/ui/Card'
 import type { ServiceItem } from '@/data/services'
-import * as LucideIcons from 'lucide-react'
+import {
+  Wrench,
+  Settings,
+  Snowflake,
+  Circle,
+  ClipboardCheck,
+  Search,
+  Car,
+  CloudRain,
+  Key,
+} from 'lucide-react'
+import type { ComponentType } from 'react'
+
+const iconMap: Record<string, ComponentType<{ className?: string }>> = {
+  Wrench,
+  Settings,
+  Snowflake,
+  Circle,
+  ClipboardCheck,
+  Search,
+  Car,
+  CloudRain,
+  Key,
+}
 
 interface ServicesGridProps {
   services: ServiceItem[]
@@ -9,14 +32,9 @@ interface ServicesGridProps {
 
 export function ServicesGrid({ services, variant = 'compact' }: ServicesGridProps) {
   return (
-    <div className={`grid gap-6 ${
-      variant === 'detailed' 
-        ? 'md:grid-cols-2 lg:grid-cols-3' 
-        : 'md:grid-cols-2 lg:grid-cols-3'
-    }`}>
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {services.map((service) => {
-        // Récupérer l'icône dynamiquement
-        const IconComponent = (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[service.icon] || LucideIcons.Wrench
+        const IconComponent = iconMap[service.icon] ?? Wrench
 
         return (
           <Card key={service.id} className="group cursor-pointer hover:border-primary/20">

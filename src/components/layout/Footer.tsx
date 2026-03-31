@@ -15,7 +15,9 @@ export function Footer() {
               <img
                 src="https://res.cloudinary.com/df5khdkxl/image/upload/v1769087897/AC_bbzf8u.svg"
                 alt="Autoconcept"
-                className="h-10 brightness-0 invert"
+                width={120}
+                height={40}
+                className="h-10 w-auto brightness-0 invert"
               />
             </Link>
             <p className="text-neutral-500 mt-2 text-sm">Garage automobile à Serrière</p>

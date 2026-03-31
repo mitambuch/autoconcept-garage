@@ -101,6 +101,22 @@
   }
 }
 
+/* Cookie consent slide up */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
 /* Selection color */
 ::selection {
   background-color: rgba(224, 0, 26, 0.2);

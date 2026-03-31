@@ -26,7 +26,7 @@ export const siteConfig = {
   // Liens externes
   links: {
     autoscout: 'https://www.autoscout24.ch/fr/s/seller-2304884',
-    googleMaps: '', // Lien Google Maps à compléter
+    googleMaps: 'https://www.google.com/maps/place/Quai+Philippe-Suchard+18,+2000+Neuch%C3%A2tel,+Switzerland',
   },
 
   // Horaires (à compléter avec le client)

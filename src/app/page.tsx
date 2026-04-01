@@ -1,5 +1,6 @@
 import { ServicesGrid } from '@/components/sections/ServicesGrid'
 import { TeamGrid } from '@/components/sections/TeamGrid'
+import { GarageGallery } from '@/components/sections/GarageGallery'
 import { servicesData } from '@/data/services'
 import { teamData } from '@/data/team'
 import { siteConfig } from '@/data/siteConfig'
@@ -13,16 +14,21 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-neutral-900 overflow-hidden">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900" />
+        {/* Background image with Ken Burns effect */}
+        <div
+          className="absolute inset-0 bg-cover bg-center animate-ken-burns scale-110"
+          style={{ backgroundImage: 'url(/images/facade/garage.jpg)' }}
+        />
+        {/* Dark overlay with gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/70 to-neutral-900/50" />
 
-        {/* Subtle grid pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" aria-hidden="true" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
+        {/* Film grain */}
+        <div className="absolute inset-0 opacity-[0.04] mix-blend-overlay animate-grain" aria-hidden="true"
+          style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")` }}
+        />
 
         {/* Accent glow */}
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]" aria-hidden="true" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse-slow" aria-hidden="true" />
 
         {/* Content */}
         <div className="relative z-10 section-container text-center py-20">
@@ -180,6 +186,9 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </div>
+
+      {/* Section Galerie Garage */}
+      <GarageGallery />
 
       {/* Section Équipe */}
       <section id="equipe" className="section-padding bg-white">

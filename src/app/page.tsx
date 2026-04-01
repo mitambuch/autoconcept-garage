@@ -38,24 +38,24 @@ export default function HomePage() {
             </span>
           </ScrollReveal>
 
-          <ScrollReveal delay={100}>
+          <ScrollReveal delay={150}>
             <img
               src="https://res.cloudinary.com/df5khdkxl/image/upload/v1769087897/AC_bbzf8u.svg"
               alt="Autoconcept — Garage automobile à Serrière, Neuchâtel"
               width={432}
               height={144}
-              className="h-20 md:h-28 lg:h-36 w-auto mx-auto mb-6"
+              className="h-20 md:h-28 lg:h-36 w-auto mx-auto mb-6 drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:drop-shadow-[0_0_40px_rgba(45,212,191,0.3)] transition-[filter] duration-700"
             />
           </ScrollReveal>
 
-          <ScrollReveal delay={200}>
+          <ScrollReveal delay={350}>
             <p className="text-xl md:text-2xl text-neutral-400 max-w-2xl mx-auto mb-12 leading-relaxed">
               Un garage à taille humaine où l'on prend le temps
               de vous écouter et de bien faire les choses.
             </p>
           </ScrollReveal>
 
-          <ScrollReveal delay={300}>
+          <ScrollReveal delay={550}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
               <a
                 href={`tel:${siteConfig.contact.phoneClean}`}
@@ -75,7 +75,7 @@ export default function HomePage() {
           </ScrollReveal>
 
           {/* Scroll indicator */}
-          <ScrollReveal delay={600}>
+          <ScrollReveal delay={750}>
             <a href="#garage" className="inline-flex flex-col items-center text-neutral-500 hover:text-primary transition-colors group">
               <span className="text-sm mb-2">Découvrir</span>
               <ArrowDown className="w-5 h-5 animate-bounce" />

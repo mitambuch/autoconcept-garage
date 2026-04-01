@@ -8,7 +8,7 @@ export interface TeamMember {
   name: string
   role: string
   description: string
-  image?: string // Chemin vers l'image (à ajouter)
+  image?: string
 }
 
 export const teamData: TeamMember[] = [
@@ -20,24 +20,17 @@ export const teamData: TeamMember[] = [
     image: '/images/team/marc.jpg',
   },
   {
-    id: 'mecanicien',
-    name: 'Exemple n°2', // À remplacer par le vrai nom
+    id: 'nelson',
+    name: 'Nelson',
     role: 'Mécanicien',
     description: 'Il prend en charge l\'entretien, les réparations et les diagnostics. Méthodique, il aime que les choses fonctionnent comme il faut.',
-    image: '/images/team/mecanicien.jpg',
-  },
-  {
-    id: 'apprenti',
-    name: 'Exemple n°3', // À remplacer par le vrai nom
-    role: 'Apprenti',
-    description: 'En formation dans l\'atelier, il participe aux interventions, apprend le métier et donne un coup de main sur pas mal de tâches.',
-    image: '/images/team/apprenti.jpg',
+    image: '/images/team/nelson.jpg',
   },
   {
     id: 'secretaire',
-    name: 'Exemple n°4', // À remplacer par le vrai nom
-    role: 'Secrétaire',
+    name: 'Secrétaire',
+    role: 'Administration & accueil',
     description: 'Elle s\'occupe de l\'accueil, des appels, des rendez-vous et de la partie administrative. C\'est souvent elle qui répond en premier quand vous nous contactez.',
-    image: '/images/team/secretaire.jpg',
+    image: '/images/team/femme.jpg',
   },
 ]

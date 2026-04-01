@@ -94,6 +94,66 @@
   }
 }
 
+/* Gallery marquee */
+.gallery-marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.gallery-marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  gap: 1rem;
+  padding-right: 1rem;
+  animation: marquee 40s linear infinite;
+}
+
+/* Hero Ken Burns effect */
+@keyframes ken-burns {
+  0% {
+    transform: scale(1.1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.2) translate(-1%, -1%);
+  }
+  100% {
+    transform: scale(1.1) translate(0, 0);
+  }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 25s ease-in-out infinite;
+}
+
+/* Subtle grain flicker */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-1%, -1%); }
+  20% { transform: translate(1%, 0%); }
+  30% { transform: translate(0%, 1%); }
+  40% { transform: translate(-1%, 1%); }
+  50% { transform: translate(1%, -1%); }
+  60% { transform: translate(0%, 1%); }
+  70% { transform: translate(-1%, 0%); }
+  80% { transform: translate(1%, 1%); }
+  90% { transform: translate(-1%, -1%); }
+}
+
+.animate-grain {
+  animation: grain 0.5s steps(1) infinite;
+}
+
+/* Slow pulse for glow */
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
 /* Smooth scroll behavior enhancement */
 @media (prefers-reduced-motion: no-preference) {
   html {

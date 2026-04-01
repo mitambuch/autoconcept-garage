@@ -27,8 +27,8 @@ export const teamData: TeamMember[] = [
     image: '/images/team/nelson.jpg',
   },
   {
-    id: 'secretaire',
-    name: 'Secrétaire',
+    id: 'cristina',
+    name: 'Cristina',
     role: 'Administration & accueil',
     description: 'Elle s\'occupe de l\'accueil, des appels, des rendez-vous et de la partie administrative. C\'est souvent elle qui répond en premier quand vous nous contactez.',
     image: '/images/team/femme.jpg',

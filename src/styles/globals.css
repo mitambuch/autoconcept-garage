@@ -154,6 +154,20 @@
   50% { opacity: 0.6; }
 }
 
+/* Logo glow pulse */
+@keyframes logo-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+  }
+  50% {
+    filter: drop-shadow(0 0 35px rgba(45, 212, 191, 0.25));
+  }
+}
+
+.animate-logo-glow {
+  animation: logo-glow 4s ease-in-out infinite;
+}
+
 /* Smooth scroll behavior enhancement */
 @media (prefers-reduced-motion: no-preference) {
   html {

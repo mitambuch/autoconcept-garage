@@ -36,9 +36,9 @@ export default function HomePage() {
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] animate-pulse-slow" aria-hidden="true" />
 
         {/* Content */}
-        <div className="relative z-10 section-container text-center py-20">
+        <div className="relative z-10 section-container text-left md:text-center py-16 md:py-20">
           <ScrollReveal>
-            <span className="inline-block px-4 py-2 bg-white/5 border border-white/10 text-neutral-300 rounded-lg text-sm font-medium mb-8 backdrop-blur-sm">
+            <span className="inline-block px-3 py-1.5 md:px-4 md:py-2 bg-white/5 border border-white/10 text-neutral-300 rounded-lg text-xs md:text-sm font-medium mb-5 md:mb-8 backdrop-blur-sm">
               Garage automobile à Serrière, Neuchâtel
             </span>
           </ScrollReveal>
@@ -49,40 +49,40 @@ export default function HomePage() {
               alt="Autoconcept — Garage automobile à Serrière, Neuchâtel"
               width={432}
               height={144}
-              className="h-20 md:h-28 lg:h-36 w-auto mx-auto mb-6 drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:drop-shadow-[0_0_40px_rgba(45,212,191,0.3)] transition-[filter] duration-700"
+              className="h-14 md:h-28 lg:h-36 w-auto mx-0 md:mx-auto mb-5 md:mb-6 drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:drop-shadow-[0_0_40px_rgba(45,212,191,0.3)] transition-[filter] duration-700"
             />
           </ScrollReveal>
 
           <ScrollReveal delay={350}>
-            <p className="text-xl md:text-2xl text-neutral-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+            <p className="text-base md:text-2xl text-neutral-400 max-w-2xl mx-0 md:mx-auto mb-8 md:mb-12 leading-relaxed">
               Un garage à taille humaine où l'on prend le temps
               de vous écouter et de bien faire les choses.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={550}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 items-start md:justify-center mb-16 md:mb-20">
               <a
                 href={`tel:${siteConfig.contact.phoneClean}`}
-                className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
+                className="group inline-flex items-center justify-center gap-2 md:gap-3 bg-primary hover:bg-primary-dark text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-4 h-4 md:w-5 md:h-5" />
                 Nous appeler
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 backdrop-blur-sm hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 md:gap-3 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-medium transition-all duration-300 backdrop-blur-sm hover:scale-105"
               >
                 Prendre rendez-vous
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
               </a>
             </div>
           </ScrollReveal>
 
           {/* Scroll indicator */}
           <ScrollReveal delay={750}>
-            <a href="#garage" className="inline-flex flex-col items-center text-neutral-500 hover:text-primary transition-colors group">
-              <span className="text-sm mb-2">Découvrir</span>
+            <a href="#garage" className="inline-flex flex-col items-start md:items-center text-neutral-500 hover:text-primary transition-colors group">
+              <span className="text-xs md:text-sm mb-2">Découvrir</span>
               <ArrowDown className="w-5 h-5 animate-bounce" />
             </a>
           </ScrollReveal>
@@ -120,20 +120,20 @@ export default function HomePage() {
             {/* Left - Text */}
             <div>
               <ScrollReveal>
-                <span className="text-primary font-semibold text-sm tracking-wider uppercase">Qui sommes-nous</span>
-                <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-8 text-neutral-900 leading-tight">
+                <span className="text-primary font-semibold text-xs md:text-sm tracking-wider uppercase">Qui sommes-nous</span>
+                <h2 className="text-3xl md:text-5xl font-bold mt-3 md:mt-4 mb-6 md:mb-8 text-neutral-900 leading-tight">
                   Plus de 10 ans<br />
                   <span className="text-neutral-400">à votre service</span>
                 </h2>
               </ScrollReveal>
 
               <ScrollReveal delay={100}>
-                <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
+                <p className="text-base md:text-lg text-neutral-600 mb-5 md:mb-6 leading-relaxed">
                   Chez Autoconcept, on ne vous raconte pas d'histoires.
                   Si une réparation ne vaut pas le coup, on vous le dit.
                   Si ce n'est pas notre spécialité, on vous oriente.
                 </p>
-                <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-base md:text-lg text-neutral-600 mb-6 md:mb-8 leading-relaxed">
                   Notre philosophie est simple : du travail bien fait,
                   des explications claires, et zéro mauvaise surprise.
                 </p>
@@ -179,11 +179,11 @@ export default function HomePage() {
       </section>
 
       {/* Divider with quote */}
-      <div className="bg-neutral-50 py-16">
+      <div className="bg-neutral-50 py-12 md:py-16">
         <div className="section-container">
           <ScrollReveal>
-            <blockquote className="text-center">
-              <p className="text-2xl md:text-3xl font-medium text-neutral-700 max-w-3xl mx-auto leading-relaxed">
+            <blockquote className="text-left md:text-center">
+              <p className="text-xl md:text-3xl font-medium text-neutral-700 max-w-3xl mx-0 md:mx-auto leading-relaxed">
                 "Si ça ne vaut pas la peine, on vous le dit.<br />
                 <span className="text-neutral-400">C'est aussi simple que ça."</span>
               </p>
@@ -199,9 +199,9 @@ export default function HomePage() {
       <section id="equipe" className="section-padding bg-white">
         <div className="section-container">
           <ScrollReveal>
-            <div className="text-center max-w-2xl mx-auto mb-16">
-              <span className="text-primary font-semibold text-sm tracking-wider uppercase">Notre équipe</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-neutral-900">
+            <div className="text-left md:text-center max-w-2xl md:mx-auto mb-12 md:mb-16">
+              <span className="text-primary font-semibold text-xs md:text-sm tracking-wider uppercase">Notre équipe</span>
+              <h2 className="text-3xl md:text-5xl font-bold mt-3 md:mt-4 text-neutral-900">
                 Des passionnés<br />à votre écoute
               </h2>
             </div>
@@ -216,15 +216,15 @@ export default function HomePage() {
       <section id="services" className="section-padding bg-neutral-50">
         <div className="section-container">
           <ScrollReveal>
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-8">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16 gap-6 md:gap-8">
               <div>
-                <span className="text-primary font-semibold text-sm tracking-wider uppercase">Nos services</span>
-                <h2 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
+                <span className="text-primary font-semibold text-xs md:text-sm tracking-wider uppercase">Nos services</span>
+                <h2 className="text-3xl md:text-5xl font-bold mt-3 md:mt-4 leading-tight">
                   <span className="text-neutral-400">Nos</span><br />
                   <span className="text-neutral-900">compétences</span>
                 </h2>
               </div>
-              <p className="text-neutral-600 max-w-md">
+              <p className="text-base md:text-base text-neutral-600 max-w-md">
                 De l'entretien courant aux réparations complexes,
                 on s'occupe de votre véhicule comme si c'était le nôtre.
               </p>
@@ -237,16 +237,16 @@ export default function HomePage() {
       </section>
 
       {/* Section Occasion */}
-      <section id="occasion" className="py-20 bg-neutral-900 text-white">
+      <section id="occasion" className="py-16 md:py-20 bg-neutral-900 text-white">
         <div className="section-container">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 md:gap-12">
             <ScrollReveal>
               <div>
-                <span className="text-primary font-semibold text-sm tracking-wider uppercase">Occasions</span>
-                <h2 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
+                <span className="text-primary font-semibold text-xs md:text-sm tracking-wider uppercase">Occasions</span>
+                <h2 className="text-3xl md:text-5xl font-bold mt-3 md:mt-4 leading-tight">
                   Véhicules<br />d'occasion
                 </h2>
-                <p className="text-neutral-400 mt-4 max-w-xl leading-relaxed">
+                <p className="text-base md:text-base text-neutral-400 mt-3 md:mt-4 max-w-xl leading-relaxed">
                   On propose aussi quelques véhicules d'occasion sélectionnés.
                   Chaque voiture est vérifiée et préparée avec soin.
                 </p>
@@ -258,7 +258,7 @@ export default function HomePage() {
                 href={siteConfig.links.autoscout || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-4 bg-white text-neutral-900 px-8 py-4 rounded-lg font-medium hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="group inline-flex items-center gap-3 md:gap-4 bg-white text-neutral-900 px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-base font-medium hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <span>Voir sur AutoScout24</span>
                 <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -269,7 +269,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 md:py-32 bg-primary relative overflow-hidden">
+      <section className="py-16 md:py-32 bg-primary relative overflow-hidden">
         {/* Subtle pattern */}
         <div className="absolute inset-0 opacity-10" aria-hidden="true" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3C/g%3E%3C/svg%3E")`,
@@ -277,18 +277,18 @@ export default function HomePage() {
 
         <div className="section-container relative z-10">
           <ScrollReveal>
-            <div className="text-center">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <div className="text-left md:text-center">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
                 Un problème ?<br />On s'en occupe.
               </h2>
-              <p className="text-xl text-white/80 mb-10 max-w-xl mx-auto">
+              <p className="text-base md:text-xl text-white/80 mb-8 md:mb-10 max-w-xl mx-0 md:mx-auto">
                 Pas de stress, pas de jargon. Juste un diagnostic clair et une solution adaptée.
               </p>
               <a
                 href={`tel:${siteConfig.contact.phoneClean}`}
-                className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-neutral-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="inline-flex items-center gap-2 md:gap-3 bg-white text-primary px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-bold hover:bg-neutral-100 transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-4 h-4 md:w-5 md:h-5" />
                 {siteConfig.contact.phone}
               </a>
             </div>
@@ -300,12 +300,12 @@ export default function HomePage() {
       <section id="contact" className="section-padding bg-white">
         <div className="section-container">
           <ScrollReveal>
-            <div className="text-center max-w-2xl mx-auto mb-16">
-              <span className="text-primary font-semibold text-sm tracking-wider uppercase">Contact</span>
-              <h2 className="text-4xl md:text-5xl font-bold mt-4 text-neutral-900">
+            <div className="text-left md:text-center max-w-2xl md:mx-auto mb-12 md:mb-16">
+              <span className="text-primary font-semibold text-xs md:text-sm tracking-wider uppercase">Contact</span>
+              <h2 className="text-3xl md:text-5xl font-bold mt-3 md:mt-4 text-neutral-900">
                 Passez nous voir
               </h2>
-              <p className="text-neutral-600 mt-4">
+              <p className="text-base md:text-base text-neutral-600 mt-3 md:mt-4">
                 On est ouverts du lundi au vendredi. N'hésitez pas à appeler avant de passer.
               </p>
             </div>

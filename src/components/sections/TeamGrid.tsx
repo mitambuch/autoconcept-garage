@@ -7,11 +7,11 @@ interface TeamGridProps {
 
 export function TeamGrid({ members }: TeamGridProps) {
   return (
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="grid md:grid-cols-3 gap-6 md:gap-8">
       {members.map((member) => (
-        <div key={member.id} className="group text-center">
+        <div key={member.id} className="group text-left md:text-center">
           {/* Photo */}
-          <div className="relative mb-6 overflow-hidden rounded-2xl aspect-[3/4] bg-neutral-200">
+          <div className="relative mb-4 md:mb-6 overflow-hidden rounded-2xl aspect-[3/4] bg-neutral-200">
             {member.image ? (
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -27,9 +27,9 @@ export function TeamGrid({ members }: TeamGridProps) {
           </div>
 
           {/* Info */}
-          <h3 className="text-xl font-bold text-neutral-900 mb-1">{member.name}</h3>
-          <p className="text-primary font-medium text-sm mb-3">{member.role}</p>
-          <p className="text-neutral-600 text-sm leading-relaxed max-w-xs mx-auto">
+          <h3 className="text-lg md:text-xl font-bold text-neutral-900 mb-1">{member.name}</h3>
+          <p className="text-primary font-medium text-xs md:text-sm mb-2 md:mb-3">{member.role}</p>
+          <p className="text-sm md:text-sm text-neutral-600 leading-relaxed max-w-xs mx-0 md:mx-auto">
             {member.description}
           </p>
         </div>

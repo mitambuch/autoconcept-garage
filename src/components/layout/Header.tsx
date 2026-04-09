@@ -26,7 +26,7 @@ export function Header() {
       }`}
     >
       <div className="section-container">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img
@@ -34,7 +34,7 @@ export function Header() {
               alt="Autoconcept — Garage automobile à Serrière, Neuchâtel"
               width={120}
               height={40}
-              className={`h-10 w-auto transition-all duration-300 ${
+              className={`h-7 md:h-10 w-auto transition-all duration-300 ${
                 isScrolled ? '' : 'brightness-0 invert'
               }`}
             />

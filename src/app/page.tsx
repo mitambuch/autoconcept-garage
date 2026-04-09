@@ -220,8 +220,8 @@ export default function HomePage() {
               <div>
                 <span className="text-primary font-semibold text-sm tracking-wider uppercase">Nos services</span>
                 <h2 className="text-4xl md:text-5xl font-bold mt-4 text-neutral-900 leading-tight">
-                  Ce qu'on fait<br />
-                  <span className="text-neutral-400">(et bien)</span>
+                  Nos<br />
+                  <span className="text-neutral-400">compétences</span>
                 </h2>
               </div>
               <p className="text-neutral-600 max-w-md">

@@ -60,6 +60,12 @@ export const servicesData: ServiceItem[] = [
     icon: 'CloudRain',
   },
   {
+    id: 'vitrage',
+    title: 'Pare-brise & vitres',
+    description: 'Nous remplaçons les pare-brise et les vitres endommagés. Pas de réparation : un remplacement complet pour garantir votre sécurité.',
+    icon: 'Square',
+  },
+  {
     id: 'pret',
     title: 'Véhicule de prêt',
     description: 'Si votre voiture reste quelques jours, nous mettons à disposition un véhicule de remplacement (selon les disponibilités).',

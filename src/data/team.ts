@@ -22,15 +22,15 @@ export const teamData: TeamMember[] = [
   {
     id: 'nelson',
     name: 'Nelson',
-    role: 'Mécanicien',
-    description: 'Il prend en charge l\'entretien, les réparations et les diagnostics. Méthodique, il aime que les choses fonctionnent comme il faut.',
+    role: 'Mécanicien & contact client',
+    description: 'Il prend en charge l\'entretien, les réparations et les diagnostics, et s\'occupe aussi de la formation des apprentis. C\'est souvent lui qui répond au téléphone et qui gère la prise de rendez-vous.',
     image: '/images/team/nelson.jpg',
   },
   {
     id: 'cristina',
     name: 'Cristina',
-    role: 'Administration & accueil',
-    description: 'Elle s\'occupe de l\'accueil, des appels, des rendez-vous et de la partie administrative. C\'est souvent elle qui répond en premier quand vous nous contactez.',
+    role: 'Administration & facturation',
+    description: 'Elle s\'occupe de la partie administrative et de la facturation du garage.',
     image: '/images/team/femme.jpg',
   },
 ]

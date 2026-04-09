@@ -219,9 +219,9 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-8">
               <div>
                 <span className="text-primary font-semibold text-sm tracking-wider uppercase">Nos services</span>
-                <h2 className="text-4xl md:text-5xl font-bold mt-4 text-neutral-900 leading-tight">
-                  Nos<br />
-                  <span className="text-neutral-400">compétences</span>
+                <h2 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
+                  <span className="text-neutral-400">Nos</span><br />
+                  <span className="text-neutral-900">compétences</span>
                 </h2>
               </div>
               <p className="text-neutral-600 max-w-md">
@@ -246,7 +246,7 @@ export default function HomePage() {
                 <h2 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
                   Véhicules<br />d'occasion
                 </h2>
-                <p className="text-neutral-400 mt-4 max-w-md leading-relaxed">
+                <p className="text-neutral-400 mt-4 max-w-xl leading-relaxed">
                   On propose aussi quelques véhicules d'occasion sélectionnés.
                   Chaque voiture est vérifiée et préparée avec soin.
                 </p>
